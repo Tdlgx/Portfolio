@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, type CSSProperties } from "react";
+import { useEffect, type CSSProperties, type MouseEvent } from "react";
 import { profile } from "@/data/profile";
 import { ui, useLang } from "@/lib/lang";
 import HeroName from "@/components/HeroName";
@@ -21,6 +21,13 @@ function Arrow({ className }: { className?: string }) {
 }
 
 const external = (url?: string) => (url ? { href: url, target: "_blank", rel: "noopener" } : null);
+
+/** Phones open their mail app through mailto; on desktop, open a Gmail compose window instead. */
+const openCompose = (e: MouseEvent<HTMLAnchorElement>) => {
+  if (window.matchMedia("(pointer: coarse)").matches) return;
+  e.preventDefault();
+  window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(profile.email)}`, "_blank", "noopener");
+};
 
 /** All page content, in the currently selected language. */
 export default function Portfolio() {
@@ -108,7 +115,7 @@ export default function Portfolio() {
           <h2>{t.contact}</h2>
           <div>
             <p className="contact-lead">{c.contactLead}</p>
-            <a className="email" href={`mailto:${profile.email}`}>{profile.email}</a>
+            <a className="email" href={`mailto:${profile.email}`} onClick={openCompose}>{profile.email}</a>
             <ul className="socials">
               {profile.socials.map((s, i) => (
                 <li key={i}>

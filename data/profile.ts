@@ -44,7 +44,7 @@ export const profile = {
   email: "battulgabatgerel92@gmail.com",
   socials: [
     { label: "GitHub", url: "https://github.com/Tdlgx" },
-    { label: "LinkedIn", url: "" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/battulga-batgerel-6a0396320/" },
     { label: "Instagram", url: "https://www.instagram.com/tulgaa4.0/" },
   ] satisfies Social[],
 
@@ -61,6 +61,14 @@ export const profile = {
         "Би ажлын бүх шатанд оролцох дуртай: систем хэрхэн уялдахыг төлөвлөх, кодоо бичих, эцсийн бүтээгдэхүүнийг ойлгомжтой, хурдан ажилладаг болгох. Ихэнхдээ веб дээр бүтээдэг. Цэгцтэй бүтэц, энгийн дизайн, хүмүүсийн бодитоор ашигладаг зүйл хийхийг чухалчилдаг. Код бичээгүй үедээ ихэвчлэн заалд байдаг.",
       skills: ["Flutter", "Dart", "C# / .NET", "Микросервис", "Docker", "Next.js", "React", "TypeScript", "Систем дизайн", "AI интеграц"],
       projects: [
+        {
+          title: "Цагтаа",
+          description:
+            "Үсчин, гоо сайхны салон, барбершоп зэрэг жижиг бизнесүүдэд зориулсан онлайн цаг захиалгын вэб апп. Үйлчлүүлэгч үйлчилгээ, ажилтан, цагаа сонгоод утас + OTP-ээр захиална. Next.js, TypeScript, PostgreSQL дээр хийж буй дипломын ажил.",
+          meta: "Вэб апп",
+          year: "2026",
+          link: "https://github.com/Tdlgx/Tsagtaa",
+        },
         {
           title: "Хуулийн AI Зөвлөх",
           description:
@@ -87,9 +95,12 @@ export const profile = {
         },
       ],
       experience: [
-        { period: "2024 – Одоо", role: "Албан тушаал", company: "Байгууллага", description: "Тэнд юу хийдэг вэ, нэг хоёр мөрөөр." },
-        { period: "2022 – 2024", role: "Албан тушаал", company: "Байгууллага", description: "Тэнд юу хийсэн бэ, нэг хоёр мөрөөр." },
-        { period: "2020 – 2022", role: "Албан тушаал", company: "Байгууллага", description: "Тэнд юу хийсэн бэ, нэг хоёр мөрөөр." },
+        {
+          period: "2026, 1 жил",
+          role: "Программ хангамжийн дадлагажигч",
+          company: "Smart Software, Монгол",
+          description: "Мэргэжлийн чиглэлээрээ нэг жилийн дадлага хийсэн.",
+        },
       ],
       contactLead: "Төсөл бодож байна уу, эсвэл зүгээр мэндлэх үү? Надад бичээрэй.",
     },
@@ -106,6 +117,14 @@ export const profile = {
         "I like owning the whole picture: planning how a system fits together, writing the code, and making the finished product clear and fast to use. Most of what I build lives on the web. I care about clean structure, honest design, and shipping things people really use. When I'm not coding, I'm usually at the gym.",
       skills: ["Flutter", "Dart", "C# / .NET", "Microservices", "Docker", "Next.js", "React", "TypeScript", "System design", "AI integration"],
       projects: [
+        {
+          title: "Tsagtaa",
+          description:
+            "An online booking web app for small businesses like barbers, beauty salons and nail studios. Customers pick a service, a staff member and a time, then confirm with their phone and an OTP. My graduation thesis, built with Next.js, TypeScript and PostgreSQL.",
+          meta: "Web app",
+          year: "2026",
+          link: "https://github.com/Tdlgx/Tsagtaa",
+        },
         {
           title: "Legal AI Consultant",
           description:
@@ -132,9 +151,12 @@ export const profile = {
         },
       ],
       experience: [
-        { period: "2024 – Now", role: "Job title", company: "Company", description: "What you do there, in one or two lines." },
-        { period: "2022 – 2024", role: "Job title", company: "Company", description: "What you did there, in one or two lines." },
-        { period: "2020 – 2022", role: "Job title", company: "Company", description: "What you did there, in one or two lines." },
+        {
+          period: "2026, 1 year",
+          role: "Software Engineering Intern",
+          company: "Smart Software, Mongolia",
+          description: "A one-year internship in my field of study.",
+        },
       ],
       contactLead: "Have a project in mind, or just want to say hello? Write to me.",
     },
